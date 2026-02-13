@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bossbby Ultra Luxury Travel</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>BOSSBBY ULTRA SAFARIS</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#book">Book</a>
+<a href="#chat">Assistant</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="overlay"></div>
+<div class="heroText">
+<h2>Luxury African Adventures</h2>
+<p>Safari • Gorilla Trekking • Culture • Elite Experiences</p>
+<button onclick="scrollBook()">Reserve Experience</button>
+</div>
+</section>
+
+<section class="cards">
+<div class="card">Wildlife Safaris</div>
+<div class="card">Gorilla Trekking</div>
+<div class="card">Chimp Tracking</div>
+<div class="card">Cultural Tours</div>
+</section>
+
+<section id="book" class="book">
+<h2>Book Your Luxury Trip</h2>
+
+<input id="name" placeholder="Full name">
+<input id="email" placeholder="Email">
+<input id="phone" placeholder="Phone">
+
+<select id="package">
+<option>Safari</option>
+<option>Gorilla Trek</option>
+<option>Chimp Trek</option>
+<option>Cultural Tour</option>
+</select>
+
+<input type="date" id="date">
+<textarea id="req" placeholder="Special requests"></textarea>
+
+<button onclick="book()">Submit Booking</button>
+</section>
+
+<div id="live" class="live"></div>
+
+<div id="chat" class="chatbox">
+<div id="messages"></div>
+<input id="msg" placeholder="Ask travel assistant...">
+<button onclick="chat()">Send</button>
+</div>
+
+<script src="script.js"></script>
+<footer style="padding:30px;background:#081413">Contact: bossbbytoursandtravel@gmail.com</footer>
+</body>
+</html>
